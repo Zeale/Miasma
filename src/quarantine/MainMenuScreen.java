@@ -59,8 +59,10 @@ public class MainMenuScreen extends Screen {
 	private void select() {
 		if (startSelected) {
 			dispose();
+			Game.screens().display(new HomefrontScreen());
 		} else {
-			Game.window();// CLOSE GAME
+			// TODO Change
+			System.exit(0);
 		}
 	}
 
