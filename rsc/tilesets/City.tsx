@@ -113,14 +113,6 @@
    <frame tileid="552" duration="100"/>
    <frame tileid="553" duration="100"/>
    <frame tileid="554" duration="100"/>
-   <frame tileid="572" duration="100"/>
-   <frame tileid="573" duration="100"/>
-   <frame tileid="574" duration="100"/>
-   <frame tileid="575" duration="100"/>
-   <frame tileid="576" duration="100"/>
-   <frame tileid="577" duration="100"/>
-   <frame tileid="578" duration="100"/>
-   <frame tileid="579" duration="100"/>
    <frame tileid="555" duration="100"/>
    <frame tileid="556" duration="100"/>
    <frame tileid="557" duration="100"/>
