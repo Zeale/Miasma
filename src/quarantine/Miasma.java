@@ -2,7 +2,6 @@ package quarantine;
 
 import de.gurkenlabs.litiengine.Game;
 import de.gurkenlabs.litiengine.graphics.FreeFlightCamera;
-import de.gurkenlabs.litiengine.gui.screens.GameScreen;
 
 public class Miasma {
 	public static void main(String[] args) {
@@ -20,8 +19,4 @@ public class Miasma {
 
 		Game.start();
 	}
-}
-
-class TestScreen extends GameScreen {
-
 }
