@@ -1,7 +1,8 @@
 package quarantine;
 
 import de.gurkenlabs.litiengine.Game;
-import de.gurkenlabs.litiengine.graphics.FreeFlightCamera;
+import de.gurkenlabs.litiengine.graphics.Camera;
+import quarantine.cammies.KeyFlightCamera;
 
 public class Miasma {
 	public static void main(String[] args) {
@@ -11,7 +12,7 @@ public class Miasma {
 
 		Game.init();
 
-		FreeFlightCamera cam = new FreeFlightCamera();
+		Camera cam = new KeyFlightCamera();
 		cam.setClampToMap(true);
 		Game.world().setCamera(cam);
 
