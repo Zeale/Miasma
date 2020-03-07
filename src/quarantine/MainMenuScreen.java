@@ -59,7 +59,7 @@ public class MainMenuScreen extends Screen {
 	private void select() {
 		if (startSelected) {
 			dispose();
-			Game.screens().display(new HomefrontScreen());
+			Game.screens().display(Miasma.HOME_FRONT_SCREEN);
 		} else {
 			// TODO Change
 			System.exit(0);

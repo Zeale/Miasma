@@ -5,6 +5,9 @@ import de.gurkenlabs.litiengine.graphics.Camera;
 import quarantine.cammies.KeyFlightCamera;
 
 public class Miasma {
+	
+	public static final HomefrontScreen HOME_FRONT_SCREEN = new HomefrontScreen();
+	
 	public static void main(String[] args) {
 		Game.info().setName("Miasma");
 		Game.info().setVersion("v0b0-nightly");
