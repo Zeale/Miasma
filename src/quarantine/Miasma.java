@@ -1,6 +1,7 @@
 package quarantine;
 
 import de.gurkenlabs.litiengine.Game;
+import de.gurkenlabs.litiengine.graphics.FreeFlightCamera;
 import de.gurkenlabs.litiengine.gui.screens.GameScreen;
 
 public class Miasma {
@@ -11,8 +12,10 @@ public class Miasma {
 
 		Game.init();
 
-		Game.graphics().setBaseRenderScale(2);
-		
+		FreeFlightCamera cam = new FreeFlightCamera();
+		cam.setClampToMap(true);
+		Game.world().setCamera(cam);
+
 		Game.screens().add(new MainMenuScreen());
 
 		Game.start();
