@@ -6,16 +6,6 @@
  </terraintypes>
  <tile id="0">
   <image width="32" height="32" source="../../../../GuttyKreumKanagawaItch/Tiles/Tile_000.png"/>
-  <animation>
-   <frame tileid="276" duration="100"/>
-   <frame tileid="277" duration="100"/>
-   <frame tileid="278" duration="100"/>
-   <frame tileid="279" duration="100"/>
-   <frame tileid="280" duration="100"/>
-   <frame tileid="281" duration="100"/>
-   <frame tileid="282" duration="100"/>
-   <frame tileid="283" duration="100"/>
-  </animation>
  </tile>
  <tile id="1">
   <image width="32" height="32" source="../../../../GuttyKreumKanagawaItch/Tiles/Tile_001.png"/>
