@@ -24,10 +24,10 @@ public class BoxComp extends GuiComponent {
 
 	private boolean closed = true;
 	private final MouseClickedListener clickListener = event -> {
-		if (BOX.contains(Input.mouse().getLocation())) {
+		if (closed && BOX.contains(Input.mouse().getLocation())) {
 			event.consume();
 			closed = false;
-		} else if (!getBoundingBox().contains(Input.mouse().getLocation())
+		} else if (!(closed || getBoundingBox().contains(Input.mouse().getLocation()))
 				|| new Rectangle((int) (getX() + getWidth() - CLOSE_BUTTON.getWidth(null)), (int) getY(),
 						(int) CLOSE_BUTTON.getWidth(null), (int) CLOSE_BUTTON.getHeight(null))
 								.contains(Input.mouse().getLocation())) {
