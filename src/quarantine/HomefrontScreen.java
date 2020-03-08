@@ -22,10 +22,10 @@ public class HomefrontScreen extends GameScreen {
 	private final BoxComp comp = new BoxComp(50, 50, 1200, 700);
 	private final Entity nathanIsAMegaShlong = new RandoCharacter();
 	{
+		comp.getComponents().add(new TextComponent(100,100, "Task 1"));
 		getComponents().add(comp);
 		
-		comp.getComponents().add(new TextComponent(100, 200, "Task2"));
-		
+		comp.getComponents().add(new TextComponent(100, 200, "Task 2"));
 		
 		nathanIsAMegaShlong.setVisible(true);
 		environment.add(nathanIsAMegaShlong);
