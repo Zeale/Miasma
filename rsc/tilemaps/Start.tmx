@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.3.3" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="32" tileheight="32" infinite="0" nextlayerid="14" nextobjectid="151">
+<map version="1.2" tiledversion="1.3.3" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="32" tileheight="32" infinite="0" nextlayerid="14" nextobjectid="153">
  <tileset firstgid="1" source="../tilesets/City.tsx"/>
  <tileset firstgid="661" source="../tilesets/City 2.tsx"/>
  <layer id="1" name="Ground" width="100" height="100">
@@ -893,7 +893,6 @@
   <object id="79" type="COLLISIONBOX" x="2155.33" y="223.667" width="9" height="134"/>
   <object id="80" type="COLLISIONBOX" x="2731" y="223.5" width="8.5" height="133.5"/>
   <object id="81" type="COLLISIONBOX" x="2827" y="223" width="9" height="134"/>
-  <object id="82" type="COLLISIONBOX" x="2276" y="500.667" width="118.667" height="86"/>
   <object id="83" type="COLLISIONBOX" x="2056.67" y="640" width="12.6667" height="132.667"/>
   <object id="84" type="COLLISIONBOX" x="1695.33" y="524.667" width="320" height="232.667"/>
   <object id="85" type="COLLISIONBOX" x="1642" y="639.333" width="11.3333" height="134"/>
@@ -948,5 +947,6 @@
   <object id="146" name="townhouse-1" type="SPAWNPOINT" x="960" y="2495.33" width="96" height="63.3333"/>
   <object id="148" name="townhouse-2" type="SPAWNPOINT" x="1632" y="2496" width="96" height="64"/>
   <object id="149" name="townhall" type="SPAWNPOINT" x="894.667" y="1220" width="130.667" height="92"/>
+  <object id="152" type="COLLISIONBOX" x="2289.33" y="513.333" width="94" height="62"/>
  </objectgroup>
 </map>
