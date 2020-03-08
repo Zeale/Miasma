@@ -1,6 +1,8 @@
 package quarantine.cammies;
 
 import java.awt.event.KeyEvent;
+import java.awt.event.MouseWheelEvent;
+import java.awt.event.MouseWheelListener;
 import java.awt.geom.Point2D;
 
 import de.gurkenlabs.litiengine.Game;
@@ -77,5 +79,29 @@ public class KeyFlightCamera extends Camera {
 		y += deltaY;
 
 		this.setFocus(new Point2D.Double(x, y));
+	}
+
+	private float targzoom = 1, upperZoomBound = 3, lowerZoomBound = .33f;
+
+	private float clamp(float zoom) {
+		if (zoom > upperZoomBound)
+			zoom = upperZoomBound;
+		else if (zoom < lowerZoomBound)
+			zoom = lowerZoomBound;
+		return zoom;
+
+	}
+
+	private final MouseWheelListener zoomListener = e -> {
+		if (e.getScrollType() == MouseWheelEvent.WHEEL_UNIT_SCROLL) {
+			setZoom(targzoom = clamp(targzoom - e.getUnitsToScroll() / 50f), 0);
+		}
+	};
+	{
+		Input.mouse().onWheelMoved(zoomListener);
+	}
+
+	public void dispose() {
+		Input.mouse().removeMouseWheelListener(zoomListener);
 	}
 }
