@@ -18,8 +18,8 @@ public class HomefrontScreen extends GameScreen {
 	private static final Font DAY_COUNT_FONT = Resources.fonts().get("rsc/fonts/Pixel LCD-7.ttf", 32f);
 	private final Environment environment = Game.world().loadEnvironment("rsc/tilemaps/Start.tmx");
 	private final AmbientLight lighting = new AmbientLight(environment, Color.blue);
-	private final Entity nathanIsAMegaShlong = new RandoCharacter();
 	private final BoxComp comp = new BoxComp(50, 50, 1200, 700);
+	private final Entity nathanIsAMegaShlong = new RandoCharacter();
 
 	{
 		getComponents().add(comp);
@@ -56,6 +56,10 @@ public class HomefrontScreen extends GameScreen {
 		g.setFont(DAY_COUNT_FONT);
 		g.setColor(Color.white);
 		TextRenderer.render(g, txt, 0, Utils.getTxtBounds(txt, DAY_COUNT_FONT).getHeight());
+	}
+
+	public void dispose() {
+		comp.dispose();
 	}
 
 }

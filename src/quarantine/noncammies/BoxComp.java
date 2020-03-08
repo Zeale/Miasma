@@ -8,6 +8,8 @@ import java.awt.Rectangle;
 
 import de.gurkenlabs.litiengine.graphics.ImageRenderer;
 import de.gurkenlabs.litiengine.gui.GuiComponent;
+import de.gurkenlabs.litiengine.input.Input;
+import de.gurkenlabs.litiengine.input.IMouse.MouseClickedListener;
 import de.gurkenlabs.litiengine.resources.Resources;
 import quarantine.Utils;
 
@@ -20,7 +22,22 @@ public class BoxComp extends GuiComponent {
 		super(x, y, width, height);
 	}
 
-	private boolean closed;
+	private boolean closed = true;
+	private final MouseClickedListener clickListener = event -> {
+		if (BOX.contains(Input.mouse().getLocation())) {
+			event.consume();
+			closed = false;
+		} else if (!getBoundingBox().contains(Input.mouse().getLocation())
+				|| new Rectangle((int) (getX() + getWidth() - CLOSE_BUTTON.getWidth(null)), (int) getY(),
+						(int) CLOSE_BUTTON.getWidth(null), (int) CLOSE_BUTTON.getHeight(null))
+								.contains(Input.mouse().getLocation())) {
+			event.consume();
+			closed = true;
+		}
+	};
+	{
+		Input.mouse().onClicked(clickListener);
+	}
 
 	@Override
 	public void render(Graphics2D g) {
@@ -34,6 +51,10 @@ public class BoxComp extends GuiComponent {
 			super.render(g);
 			ImageRenderer.render(g, CLOSE_BUTTON, getX() + getWidth() - CLOSE_BUTTON.getWidth(null), getY());
 		}
+	}
+
+	public void dispose() {
+		Input.mouse().removeMouseClickedListener(clickListener);
 	}
 
 }

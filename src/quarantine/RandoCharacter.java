@@ -37,7 +37,11 @@ public class RandoCharacter extends Creature {
 	public RandoCharacter() {
 		super("RandoCharacter-" + count++);
 		setSpritePrefix(type + '_' + getRandomColor());
-		Input.mouse().onClicked(event -> en.navigate(Input.mouse().getMapLocation()));
+		Input.mouse().onClicked(event -> {
+			if (event.isConsumed())
+				return;
+			en.navigate(Input.mouse().getMapLocation());
+		});
 		setCollision(true);
 		setCollisionBoxHeight(32);
 		setCollisionBoxWidth(32);
