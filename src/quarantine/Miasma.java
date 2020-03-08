@@ -18,7 +18,7 @@ public class Miasma {
 		Game.info().setDescription("An homage to the Corona virus.");
 
 		Game.init();
-		homeFrontScreen();
+		homeFrontScreen();// Load the main game screen.
 
 		Camera cam = new KeyFlightCamera();
 		cam.setClampToMap(true);
