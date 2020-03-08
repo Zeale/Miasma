@@ -8,7 +8,7 @@ import de.gurkenlabs.litiengine.pathfinding.EntityNavigator;
 import de.gurkenlabs.litiengine.pathfinding.astar.AStarPathFinder;
 import de.gurkenlabs.litiengine.resources.Resources;
 
-public class Character extends Creature {
+public class RandoCharacter extends Creature {
 	private final EntityNavigator en = new EntityNavigator(this,
 			new AStarPathFinder(Game.world().environment().getMap()));
 
@@ -16,10 +16,10 @@ public class Character extends Creature {
 		en.navigate(point);
 	}
 
-	public Character() {
+	public RandoCharacter() {
 		super("Mega-Shlong");
-		Resources.spritesheets().loadFrom("rsc/sprites/sprites.info");
-		setSpritePrefix("megaman");
+		Resources.spritesheets().load("rsc/sprites/Jeremy", 32, 32);
+		setSpritePrefix("jeremy-" + ((int) Math.random() * 3));
 	}
 
 }

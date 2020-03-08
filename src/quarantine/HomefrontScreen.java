@@ -19,7 +19,7 @@ public class HomefrontScreen extends GameScreen {
 	private static final Font DAY_COUNT_FONT = Resources.fonts().get("rsc/fonts/Pixel LCD-7.ttf", 32f);
 	private final Environment environment = Game.world().loadEnvironment("rsc/tilemaps/Start.tmx");
 	private final AmbientLight lighting = new AmbientLight(environment, Color.blue);
-	private final Entity nathanIsAMegaShlong = new Character();
+	private final Entity nathanIsAMegaShlong = new RandoCharacter();
 	{
 
 		String[] content = { "Yorick loves Java", "Audrey is cool", "Dillon is awesome", "Nathan is the coolest" };
