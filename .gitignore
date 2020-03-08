@@ -5,3 +5,4 @@ game.log
 crash.txt
 game.log.lck
 game.log.*
+*.png
