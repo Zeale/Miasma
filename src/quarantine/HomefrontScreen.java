@@ -1,6 +1,5 @@
 package quarantine;
 
-import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
@@ -62,7 +61,7 @@ public class HomefrontScreen extends GameScreen {
 
 		String txt = "Day -" + dayCount;
 		g.setFont(DAY_COUNT_FONT);
-		g.setStroke(new BasicStroke(20));
+		g.setColor(Color.white);
 		TextRenderer.render(g, txt, 0, Utils.getTxtBounds(txt, DAY_COUNT_FONT).getHeight());
 	}
 
