@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.3.3" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="32" tileheight="32" infinite="0" nextlayerid="14" nextobjectid="48">
+<map version="1.2" tiledversion="1.3.3" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="32" tileheight="32" infinite="0" nextlayerid="14" nextobjectid="151">
  <tileset firstgid="1" source="../tilesets/City.tsx"/>
  <tileset firstgid="661" source="../tilesets/City 2.tsx"/>
  <layer id="1" name="Ground" width="100" height="100">
@@ -869,5 +869,84 @@
   <object id="45" type="COLLISIONBOX" x="1664" y="972" width="95.3333" height="50.6667"/>
   <object id="46" type="COLLISIONBOX" x="1665" y="1096.33" width="30.3333" height="110.333"/>
   <object id="47" type="COLLISIONBOX" x="1728.33" y="1096.33" width="31.6667" height="110"/>
+  <object id="48" type="COLLISIONBOX" x="768" y="908" width="384" height="306.667"/>
+  <object id="52" type="COLLISIONBOX" x="128" y="268" width="127.667" height="82.6667"/>
+  <object id="53" type="COLLISIONBOX" x="108" y="224.333" width="8.66667" height="133"/>
+  <object id="56" type="COLLISIONBOX" x="299" y="228.5" width="8.66667" height="133"/>
+  <object id="57" type="COLLISIONBOX" x="395.667" y="221.833" width="8.66667" height="133"/>
+  <object id="58" type="COLLISIONBOX" x="416" y="205" width="191.5" height="145.5"/>
+  <object id="59" type="COLLISIONBOX" x="608" y="172" width="63.5" height="179.5"/>
+  <object id="60" type="COLLISIONBOX" x="672" y="140" width="96" height="202.5"/>
+  <object id="66" type="COLLISIONBOX" x="778" y="224.5" width="10.5" height="132.5"/>
+  <object id="67" type="COLLISIONBOX" x="876" y="225.5" width="8.5" height="132"/>
+  <object id="68" type="COLLISIONBOX" x="928.5" y="204" width="255" height="147"/>
+  <object id="69" type="COLLISIONBOX" x="1225.5" y="224" width="11.5" height="133.5"/>
+  <object id="70" type="COLLISIONBOX" x="1322.5" y="224.5" width="10" height="133"/>
+  <object id="71" type="COLLISIONBOX" x="1376.5" y="172" width="128" height="179"/>
+  <object id="72" type="COLLISIONBOX" x="1547" y="224" width="9.5" height="134"/>
+  <object id="73" type="COLLISIONBOX" x="1643" y="224" width="10" height="132.5"/>
+  <object id="74" type="COLLISIONBOX" x="1696" y="172.5" width="191.5" height="146"/>
+  <object id="75" type="COLLISIONBOX" x="1793.5" y="318.5" width="94" height="23"/>
+  <object id="76" type="COLLISIONBOX" x="1888.5" y="172.5" width="64" height="169.5"/>
+  <object id="77" type="COLLISIONBOX" x="1952.5" y="140" width="95" height="201"/>
+  <object id="78" type="COLLISIONBOX" x="2059.5" y="225.5" width="8" height="132"/>
+  <object id="79" type="COLLISIONBOX" x="2155.33" y="223.667" width="9" height="134"/>
+  <object id="80" type="COLLISIONBOX" x="2731" y="223.5" width="8.5" height="133.5"/>
+  <object id="81" type="COLLISIONBOX" x="2827" y="223" width="9" height="134"/>
+  <object id="82" type="COLLISIONBOX" x="2276" y="500.667" width="118.667" height="86"/>
+  <object id="83" type="COLLISIONBOX" x="2056.67" y="640" width="12.6667" height="132.667"/>
+  <object id="84" type="COLLISIONBOX" x="1695.33" y="524.667" width="320" height="232.667"/>
+  <object id="85" type="COLLISIONBOX" x="1642" y="639.333" width="11.3333" height="134"/>
+  <object id="86" type="COLLISIONBOX" x="1546.67" y="641.333" width="9.33333" height="133.333"/>
+  <object id="87" type="COLLISIONBOX" x="1440" y="524.667" width="94.6667" height="233.333"/>
+  <object id="88" type="COLLISIONBOX" x="1344.67" y="589.333" width="94" height="167.333"/>
+  <object id="89" type="COLLISIONBOX" x="1322.67" y="640.667" width="9.33333" height="132"/>
+  <object id="95" type="COLLISIONBOX" x="1074" y="513.5" width="94.5" height="63"/>
+  <object id="96" type="COLLISIONBOX" x="880.5" y="643" width="63" height="61"/>
+  <object id="97" type="COLLISIONBOX" x="587.5" y="643" width="6.5" height="130.5"/>
+  <object id="98" type="COLLISIONBOX" x="395.5" y="642.5" width="6.5" height="130"/>
+  <object id="99" type="COLLISIONBOX" x="448.5" y="620.5" width="95" height="114.5"/>
+  <object id="100" type="COLLISIONBOX" x="256.5" y="620" width="94.5" height="115"/>
+  <object id="101" type="COLLISIONBOX" x="205" y="640.5" width="8" height="132"/>
+  <object id="102" type="COLLISIONBOX" x="352" y="460" width="95" height="115"/>
+  <object id="103" type="COLLISIONBOX" x="160" y="460.5" width="95.5" height="115"/>
+  <object id="104" type="COLLISIONBOX" x="64.5" y="621" width="95" height="114"/>
+  <object id="105" type="COLLISIONBOX" x="12.5" y="641" width="7.5" height="132"/>
+  <object id="106" type="COLLISIONBOX" x="256" y="940.667" width="287.333" height="210.667"/>
+  <object id="107" type="COLLISIONBOX" x="683.333" y="1088.67" width="8" height="132"/>
+  <object id="109" type="COLLISIONBOX" x="1225.33" y="1088" width="11.3333" height="132.667"/>
+  <object id="110" type="COLLISIONBOX" x="1323.33" y="1088" width="8.66667" height="132"/>
+  <object id="111" type="COLLISIONBOX" x="2058" y="1088.67" width="10.6667" height="132"/>
+  <object id="112" type="COLLISIONBOX" x="2155.33" y="1088.67" width="8.66667" height="133.333"/>
+  <object id="113" type="COLLISIONBOX" x="2186.67" y="1192" width="8.66667" height="15.3333"/>
+  <object id="114" type="COLLISIONBOX" x="2474.67" y="1088" width="10" height="132"/>
+  <object id="115" type="COLLISIONBOX" x="2443.33" y="1197.33" width="8.66667" height="10.6667"/>
+  <object id="117" type="COLLISIONBOX" x="12.6667" y="2368.67" width="7.33333" height="133.333"/>
+  <object id="118" type="COLLISIONBOX" x="64" y="2316" width="192" height="146"/>
+  <object id="119" type="COLLISIONBOX" x="320.667" y="2316.67" width="191.333" height="145.333"/>
+  <object id="120" type="COLLISIONBOX" x="556" y="2369.33" width="9.33333" height="132"/>
+  <object id="121" type="COLLISIONBOX" x="714.667" y="2443.33" width="9.33333" height="56"/>
+  <object id="122" type="COLLISIONBOX" x="813.333" y="2474.67" width="5.33333" height="10.6667"/>
+  <object id="124" type="COLLISIONBOX" x="832.667" y="2338.67" width="62.6667" height="146.667"/>
+  <object id="125" type="COLLISIONBOX" x="896" y="2284" width="95.3333" height="200"/>
+  <object id="126" type="COLLISIONBOX" x="992.667" y="2337.33" width="63.3333" height="148"/>
+  <object id="127" type="COLLISIONBOX" x="1057.33" y="2284" width="94.6667" height="200.667"/>
+  <object id="128" type="COLLISIONBOX" x="1152" y="2336.67" width="64" height="148"/>
+  <object id="129" type="COLLISIONBOX" x="1216.67" y="2284.67" width="94.6667" height="199.333"/>
+  <object id="130" type="COLLISIONBOX" x="1312.67" y="2336.67" width="62.6667" height="148"/>
+  <object id="131" type="COLLISIONBOX" x="1376" y="2285.33" width="95.3333" height="200"/>
+  <object id="132" type="COLLISIONBOX" x="1472.67" y="2336.67" width="62.6667" height="148"/>
+  <object id="133" type="COLLISIONBOX" x="1536.67" y="2283.33" width="94.6667" height="202"/>
+  <object id="135" type="COLLISIONBOX" x="1632" y="2337" width="63.5" height="148"/>
+  <object id="136" type="COLLISIONBOX" x="1696" y="2284" width="95.5" height="201.5"/>
+  <object id="137" type="COLLISIONBOX" x="1792" y="2337" width="64" height="149"/>
+  <object id="139" type="COLLISIONBOX" x="1856.5" y="2284" width="95.5" height="201.5"/>
+  <object id="140" type="COLLISIONBOX" x="2028" y="2370.5" width="4.5" height="130"/>
+  <object id="142" type="COLLISIONBOX" x="12.5" y="225" width="8" height="132.5"/>
+  <object id="143" type="COLLISIONBOX" x="137" y="188.5" width="14.5" height="13.5"/>
+  <object id="145" name="houses" type="SPAWNPOINT" x="256" y="748" width="97.3333" height="64"/>
+  <object id="146" name="townhouse-1" type="SPAWNPOINT" x="960" y="2495.33" width="96" height="63.3333"/>
+  <object id="148" name="townhouse-2" type="SPAWNPOINT" x="1632" y="2496" width="96" height="64"/>
+  <object id="149" name="townhall" type="SPAWNPOINT" x="894.667" y="1220" width="130.667" height="92"/>
  </objectgroup>
 </map>
