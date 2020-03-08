@@ -13,6 +13,7 @@ import de.gurkenlabs.litiengine.graphics.TextRenderer;
 import de.gurkenlabs.litiengine.gui.screens.GameScreen;
 import de.gurkenlabs.litiengine.resources.Resources;
 import quarantine.noncammies.BoxComp;
+import quarantine.noncammies.TextComponent;
 
 public class HomefrontScreen extends GameScreen {
 	private static final Font DAY_COUNT_FONT = Resources.fonts().get("rsc/fonts/Pixel LCD-7.ttf", 32f);
@@ -20,10 +21,12 @@ public class HomefrontScreen extends GameScreen {
 	private final AmbientLight lighting = new AmbientLight(environment, Color.blue);
 	private final BoxComp comp = new BoxComp(50, 50, 1200, 700);
 	private final Entity nathanIsAMegaShlong = new RandoCharacter();
-
 	{
 		getComponents().add(comp);
-
+		
+		comp.getComponents().add(new TextComponent(100, 200, "Task2"));
+		
+		
 		nathanIsAMegaShlong.setVisible(true);
 		environment.add(nathanIsAMegaShlong);
 		Spawnpoint enter = environment.getSpawnpoint("hospital");
