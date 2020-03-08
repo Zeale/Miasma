@@ -2,9 +2,12 @@ package quarantine;
 
 import java.awt.Font;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.Rectangle;
 import java.awt.font.FontRenderContext;
 import java.awt.geom.Rectangle2D;
+
+import de.gurkenlabs.litiengine.graphics.TextRenderer;
 
 public class Utils {
 	/**
@@ -34,5 +37,14 @@ public class Utils {
 
 		g.setFont(font);
 		g.drawString(s, r.x + a, r.y + b);
+	}
+
+	public static Rectangle2D getTxtBounds(String s, Font font) {
+		return font.getStringBounds(s, new FontRenderContext(null, true, true));
+	}
+
+	public static void rightAlign(Graphics2D g, Rectangle rect, String s, Font font) {
+		Rectangle2D box = getTxtBounds(s, font);
+		TextRenderer.render(g, s, rect.getX() + rect.width - box.getWidth(), rect.getY());
 	}
 }
