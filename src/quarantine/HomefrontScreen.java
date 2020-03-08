@@ -10,25 +10,19 @@ import de.gurkenlabs.litiengine.entities.Spawnpoint;
 import de.gurkenlabs.litiengine.environment.Environment;
 import de.gurkenlabs.litiengine.graphics.AmbientLight;
 import de.gurkenlabs.litiengine.graphics.TextRenderer;
-import de.gurkenlabs.litiengine.gui.DropdownListField;
 import de.gurkenlabs.litiengine.gui.screens.GameScreen;
 import de.gurkenlabs.litiengine.resources.Resources;
+import quarantine.noncammies.BoxComp;
 
 public class HomefrontScreen extends GameScreen {
 	private static final Font DAY_COUNT_FONT = Resources.fonts().get("rsc/fonts/Pixel LCD-7.ttf", 32f);
 	private final Environment environment = Game.world().loadEnvironment("rsc/tilemaps/Start.tmx");
 	private final AmbientLight lighting = new AmbientLight(environment, Color.blue);
 	private final Entity nathanIsAMegaShlong = new RandoCharacter();
+	private final BoxComp comp = new BoxComp(50, 50, 1200, 700);
+
 	{
-
-		String[] content = { "Yorick loves Java", "Audrey is cool", "Dillon is awesome", "Nathan is the coolest" };
-		DropdownListField dropDown = new DropdownListField(50, 30, 250, 250, content, content.length);
-		dropDown.setHeight(150);
-		getComponents().add(dropDown);
-
-		DropdownListField dropDown2 = new DropdownListField(350, 30, 250, 250, content, content.length);
-		dropDown2.setHeight(150);
-		getComponents().add(dropDown2);
+		getComponents().add(comp);
 
 		nathanIsAMegaShlong.setVisible(true);
 		environment.add(nathanIsAMegaShlong);
@@ -37,7 +31,6 @@ public class HomefrontScreen extends GameScreen {
 			enter.spawn(nathanIsAMegaShlong);
 		setNight(false);
 	}
-
 	private int dayCount = 1;
 
 	public void setNight(boolean night) {
